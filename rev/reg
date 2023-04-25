@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class StringReverse {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        // get the input string from the user
+        String name = in.next();
+
+        // create an empty stack
+        Stack stack = new Stack();
+
+        // traverse through the string from index=0 to name.length() - 1
+        for(int index=0;index<name.length();index++){
+            stack.push(name.charAt(index));
+        }
+
+            // for every character at the index,
+            // push it to the stack
+       while(!stack.isEmpty()) {
+            System.out.print(stack.tos());
+            stack.pop();
+        }
+
+
+        // do the following iteratively until the stack becomes empty
+
+            // print the top of the stack
+
+            // pop the stack
+
+        // close the scanner object
+        in.close();
+    }
+}
